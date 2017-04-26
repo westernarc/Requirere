@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class SysStateTitle : TemplateState
 {
-
     public override void Initialize()
     {
 
@@ -17,7 +16,7 @@ public class SysStateTitle : TemplateState
     }
 
 
-    public override void Cleanup()
+    public override void Terminate()
     {
 
     }

@@ -10,6 +10,7 @@ class Sys : MonoBehaviour
 {
     void Awake()
     {
+        SysLog.Log("Sys.Awake");
         //Get all references
         SysRef._ref.Initialize();
         SysRef._ref.UiRef.Initialize();
@@ -21,6 +22,8 @@ class Sys : MonoBehaviour
     }
     void Update()
     {
-
+        //SysLog.Log("Sys.Update");
+        SysRef._ref.UiRef.Run();
+        SysRef._ref.UiRef.transition.Fade();
     }
 }

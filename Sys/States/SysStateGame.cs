@@ -17,7 +17,7 @@ public class SysStateGame : TemplateState
     }
 
 
-    public override void Cleanup()
+    public override void Terminate()
     {
 
     }
